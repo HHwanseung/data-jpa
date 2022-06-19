@@ -180,7 +180,7 @@ class MemberRepositoryTest {
         memberRepository.save(new Member("member1", 10));
         memberRepository.save(new Member("member1", 10));
         memberRepository.save(new Member("member1", 10));
-        memberRepository.save(new Member("member1", 10));
+        memberRepository.save(new Member("member2", 20));
 
         int age = 10;
         PageRequest pageRequest = PageRequest.of(0, 3, Sort.by(Sort.Direction.DESC, "username"));
