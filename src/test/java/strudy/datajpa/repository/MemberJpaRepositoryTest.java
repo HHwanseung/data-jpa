@@ -125,6 +125,7 @@ class MemberJpaRepositoryTest {
         memberJpaRepository.save(new Member("member3", 20));
         memberJpaRepository.save(new Member("member4", 21));
         memberJpaRepository.save(new Member("member5", 40));
+        memberJpaRepository.save(new Member("member5", 53));
 
         //when
         int resultCount = memberJpaRepository.bulkAgePlus(20);
