@@ -16,5 +16,6 @@ public class MemberQueryRepository {
     List<Member> findAllMembers() {
         return em.createQuery("select m from Member m")
                 .getResultList();
+
     }
 }
