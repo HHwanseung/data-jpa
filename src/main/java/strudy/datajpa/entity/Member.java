@@ -47,4 +47,8 @@ public class Member {
         team.getMembers().add(this);
     }
 
+    public void changeMember(Member member) {
+
+    }
+
 }
