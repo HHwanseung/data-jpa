@@ -1,8 +1,10 @@
 package strudy.datajpa.entity;
 
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Getter @Setter
@@ -20,6 +22,10 @@ public class Member {
     private Long id;
     private String username;
     private int age;
+
+    @CreatedDate
+    @Column(updatable = false)
+    private LocalDateTime createDate;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "team_id")
