@@ -323,6 +323,7 @@ class MemberRepositoryTest {
         em.flush();
         em.clear();
 
+
         //when
         //Probe
         Member member = new Member("m1");
