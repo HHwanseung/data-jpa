@@ -390,7 +390,6 @@ class MemberRepositoryTest {
         for (MemberProjection memberProjection : content) {
             System.out.println("memberProjection = " + memberProjection.getUsername());
             System.out.println("memberProjection = " + memberProjection.getTeamName());
-            System.out.println("memberProjection = " + memberProjection.getId());
         }
 
     }
